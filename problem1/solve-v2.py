@@ -10,4 +10,6 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 # mcm(3,5) = 15, so we can just sum all the multiples of 3, all the
 # multiples of 5, and then remove the common multiples (multiples of
 # 15). I noticed this after looking at the forum.
-print sum(range(3,1000,3)) + sum(range(5,1000,5)) - sum(range(15,1000,15))
+LIMIT=1000
+
+print sum(range(3,LIMIT,3)) + sum(range(5,LIMIT,5)) - sum(range(15,LIMIT,15))

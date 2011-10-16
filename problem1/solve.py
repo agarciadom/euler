@@ -35,9 +35,10 @@ def merge(s1, s2):
             current1 = s1.next()
             current2 = s2.next()
 
-less_than_1000       = lambda x: x < 1000
+LIMIT                = 1000
+less_than_limit      = lambda x: x < LIMIT
 multiples_of_3_and_5 = merge(multiples(3), multiples(5))
-selected_multiples   = takewhile(less_than_1000, multiples_of_3_and_5)
+selected_multiples   = takewhile(less_than_limit, multiples_of_3_and_5)
 solution             = sum(selected_multiples)
 
 print("The solution is: " + str(solution))
